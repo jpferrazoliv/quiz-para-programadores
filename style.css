@@ -1,0 +1,277 @@
+:root {
+    --branco: #ffffff;
+    --preto: #222222;
+    --azul: #0073e6;
+    --azul-claro: #4a90e2;
+    --cinza: #e0e0e0;
+    --cinza-escuro: #666;
+}
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, sans-serif;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+header {
+    display: flex;
+    padding: 2.5rem;
+    flex-direction: column;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    border-bottom: 5px solid var(--azul-claro);
+}
+h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+header p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.introducao {
+    margin: 5rem 5rem 0rem;
+}
+.introducao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.introducao p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+.quiz {
+    margin: 5rem;
+}
+
+
+.Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .Q8 {
+    margin-bottom: 5rem;
+}
+
+.Q1 h2, .Q2 h2, .Q3 h2, .Q4 h2, .Q5 h2, .Q6 h2, .Q7 h2, .Q8 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Q1 p, .Q2 p, .Q3 p, .Q4 p, .Q5 p, .Q6 p, .Q7 p, .Q8 p {
+    margin-bottom: 2rem;
+}
+
+
+.Q1 input {
+    margin-bottom: 1.5rem;
+    accent-color: var(--azul);
+}
+
+.Q2 input, .Q3 input, .Q4 input{
+    border: 2px solid var(--azul);
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1.5rem;
+    color: var(--preto);
+}
+
+.senha-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.senha input {
+    padding-right: 3rem;
+}
+
+.senha {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.senha:hover {
+    opacity: 0.7;
+}
+
+
+.Q5 label {
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.Q5 input {
+    margin-right: 0.5rem;
+    accent-color: var(--azul);
+}
+
+
+.p6 {
+    display: none;
+}
+.Q6 label {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+}
+.Q6 label:hover {
+    background-color: var(--azul);
+}
+.Q6 .file-name {
+    margin-left: 1rem;
+    font-style: italic;
+    color: var(--azul);
+}
+
+
+.Q7 select {
+    background-color: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--preto);
+}
+
+
+.Q8 figure {
+    text-align: center;
+}
+.Q8 img {
+    width: 300px;
+    height: auto;
+    padding: 1rem;
+}
+.Q8 figcaption {
+    margin-bottom: 3rem;
+}
+.Q8 input {
+    background-color: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 1.5rem;
+    color: var(--preto);
+}
+
+
+
+.tabela h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 15rem 0rem 2rem;
+}
+.tabela table {
+    width: 50%;
+    height: 25rem;
+    margin: 0 auto;
+}
+.tabela th, .tabela td {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.respostas h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 15rem 0rem 2rem;
+}
+.respostas details {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1.8px solid var(--cor-destaque);
+    border-radius: 0.25rem;
+}
+.respostas summary {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.respostas summary:hover {
+    color: var(--cor-destaque);
+}
+.respostas li {
+    margin: 2rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.feedback h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 15rem 0rem 2rem;
+}
+.feedback form {
+    width: 50%;
+    margin: 0 auto 10rem;
+    padding: 1rem;
+    border: 1.8px solid var(--cor-destaque);
+    border-radius: 0.25rem;
+}
+
+.feedback fieldset {
+    border: none;
+}
+.feedback label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.feedback input, .feedback textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 3rem;
+    border: 1.8px solid var(--preto);
+    border-radius: 0.25rem;
+    background-color: transparent;
+    resize: none;
+}
+.feedback button {
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.feedback button:hover {
+    background-color: var(--azul-claro);
+}
+.feedback legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--azul);
+    color: var(--branco);
+}
